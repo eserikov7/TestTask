@@ -11,19 +11,17 @@ import ObjectMapper
 
 public class TickerInfo: Mappable {
     
-    var id:String?
-    var name:String?
-    var symbol:String?
-    var price_usd:Float?
-    var price_btc:Float?
+    public var name:String?
+    public var symbol:String?
+    public var price_usd:String?//Можно перевести в Float но там нужно просто отобразить поэтому String
+    public var price_btc:String?
     
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        id <- map["id"]
         name <- map["name"]
         symbol <- map["symbol"]
-        price_usd <- (map["price_usd"], FloatTransform())
-        price_btc <- (map["price_btc"], FloatTransform())
+        price_usd <- map["price_usd"]
+        price_btc <- map["price_btc"]
     }
 }

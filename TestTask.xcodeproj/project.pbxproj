@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,7 @@
 		967242A723D0B1FE003FE0FE /* TestTaskModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9672429123D0B1FD003FE0FE /* TestTaskModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		967242B223D0C64B003FE0FE /* TickerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428523D0A18F003FE0FE /* TickerInfo.swift */; };
 		967242B423D0C650003FE0FE /* TickerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428523D0A18F003FE0FE /* TickerInfo.swift */; };
-		967242B723D0C663003FE0FE /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428A23D0AD3E003FE0FE /* FloatTransform.swift */; };
 		967242B823D0C663003FE0FE /* TickersServiceAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428723D0AC17003FE0FE /* TickersServiceAbstract.swift */; };
-		967242B923D0C664003FE0FE /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428A23D0AD3E003FE0FE /* FloatTransform.swift */; };
 		967242BA23D0C664003FE0FE /* TickersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428323D0A17D003FE0FE /* TickersService.swift */; };
 		967242BB23D0C664003FE0FE /* TickersServiceAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672428723D0AC17003FE0FE /* TickersServiceAbstract.swift */; };
 		967242BD23D0C92E003FE0FE /* TickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672427E23D09FF7003FE0FE /* TickerAPI.swift */; };
@@ -44,6 +42,13 @@
 		9672431323D0CE54003FE0FE /* FormBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672431123D0CE53003FE0FE /* FormBuilder.swift */; };
 		9672431A23D0D5E3003FE0FE /* Pods_TestTaskModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADA71190182AA52E7D7C22A /* Pods_TestTaskModel.framework */; };
 		9672431B23D0D5E3003FE0FE /* Pods_TestTaskModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADA71190182AA52E7D7C22A /* Pods_TestTaskModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9672431F23D0D8F2003FE0FE /* TestTaskModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672429123D0B1FD003FE0FE /* TestTaskModel.framework */; };
+		9672432023D0D8F2003FE0FE /* TestTaskModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9672429123D0B1FD003FE0FE /* TestTaskModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9672432523D0D9FB003FE0FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672432423D0D9FB003FE0FE /* UIViewControllerExtensions.swift */; };
+		9672432723D0DB98003FE0FE /* UIStyleActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672432623D0DB98003FE0FE /* UIStyleActivityIndicator.swift */; };
+		9672432923D0DD9C003FE0FE /* UITickerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672432823D0DD9C003FE0FE /* UITickerInfoVC.swift */; };
+		9672432A23D0E133003FE0FE /* UIStyleActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672432623D0DB98003FE0FE /* UIStyleActivityIndicator.swift */; };
+		9672432B23D0E14F003FE0FE /* UITickerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672432823D0DD9C003FE0FE /* UITickerInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,13 @@
 			remoteGlobalIDString = 967242EC23D0CD1B003FE0FE;
 			remoteInfo = TickersUI;
 		};
+		9672432123D0D8F2003FE0FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9672424F23D09DE5003FE0FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9672429023D0B1FD003FE0FE;
+			remoteInfo = TestTaskModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +130,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9672431B23D0D5E3003FE0FE /* Pods_TestTaskModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9672432323D0D8F2003FE0FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9672432023D0D8F2003FE0FE /* TestTaskModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +168,6 @@
 		9672428323D0A17D003FE0FE /* TickersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersService.swift; sourceTree = "<group>"; };
 		9672428523D0A18F003FE0FE /* TickerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerInfo.swift; sourceTree = "<group>"; };
 		9672428723D0AC17003FE0FE /* TickersServiceAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersServiceAbstract.swift; sourceTree = "<group>"; };
-		9672428A23D0AD3E003FE0FE /* FloatTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTransform.swift; sourceTree = "<group>"; };
 		9672429123D0B1FD003FE0FE /* TestTaskModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestTaskModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9672429323D0B1FD003FE0FE /* TestTaskModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTaskModel.h; sourceTree = "<group>"; };
 		9672429423D0B1FD003FE0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +184,9 @@
 		9672430B23D0CD30003FE0FE /* Tickers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tickers.storyboard; sourceTree = "<group>"; };
 		9672430E23D0CD47003FE0FE /* UITickersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITickersVC.swift; sourceTree = "<group>"; };
 		9672431123D0CE53003FE0FE /* FormBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBuilder.swift; sourceTree = "<group>"; };
+		9672432423D0D9FB003FE0FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9672432623D0DB98003FE0FE /* UIStyleActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStyleActivityIndicator.swift; sourceTree = "<group>"; };
+		9672432823D0DD9C003FE0FE /* UITickerInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITickerInfoVC.swift; sourceTree = "<group>"; };
 		FE499366EE46E3DF21AD7A11 /* Pods_TestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9672431F23D0D8F2003FE0FE /* TestTaskModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +307,6 @@
 		9672427C23D09F32003FE0FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9672428923D0AD22003FE0FE /* Common */,
 				9672428223D0A167003FE0FE /* Tickers */,
 			);
 			path = Model;
@@ -304,14 +329,6 @@
 				9672428723D0AC17003FE0FE /* TickersServiceAbstract.swift */,
 			);
 			path = Tickers;
-			sourceTree = "<group>";
-		};
-		9672428923D0AD22003FE0FE /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				9672428A23D0AD3E003FE0FE /* FloatTransform.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		9672429223D0B1FD003FE0FE /* TestTaskModel */ = {
@@ -358,8 +375,11 @@
 		9672430A23D0CD22003FE0FE /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
+				9672432623D0DB98003FE0FE /* UIStyleActivityIndicator.swift */,
+				9672432423D0D9FB003FE0FE /* UIViewControllerExtensions.swift */,
 				9672430B23D0CD30003FE0FE /* Tickers.storyboard */,
 				9672430E23D0CD47003FE0FE /* UITickersVC.swift */,
+				9672432823D0DD9C003FE0FE /* UITickerInfoVC.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -482,10 +502,12 @@
 				967242E923D0CD1B003FE0FE /* Sources */,
 				967242EA23D0CD1B003FE0FE /* Frameworks */,
 				967242EB23D0CD1B003FE0FE /* Resources */,
+				9672432323D0D8F2003FE0FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9672432223D0D8F2003FE0FE /* PBXTargetDependency */,
 			);
 			name = TickersUI;
 			productName = TickersUI;
@@ -706,7 +728,6 @@
 			files = (
 				967242B223D0C64B003FE0FE /* TickerInfo.swift in Sources */,
 				967242C123D0CAAA003FE0FE /* TickersService.swift in Sources */,
-				967242B723D0C663003FE0FE /* FloatTransform.swift in Sources */,
 				967242BD23D0C92E003FE0FE /* TickerAPI.swift in Sources */,
 				967242BE23D0C92E003FE0FE /* Requests.swift in Sources */,
 				967242B823D0C663003FE0FE /* TickersServiceAbstract.swift in Sources */,
@@ -719,7 +740,6 @@
 			files = (
 				967242A123D0B1FE003FE0FE /* TestTaskModelTests.swift in Sources */,
 				967242BA23D0C664003FE0FE /* TickersService.swift in Sources */,
-				967242B923D0C664003FE0FE /* FloatTransform.swift in Sources */,
 				967242BB23D0C664003FE0FE /* TickersServiceAbstract.swift in Sources */,
 				967242BF23D0C92E003FE0FE /* TickerAPI.swift in Sources */,
 				967242C023D0C92E003FE0FE /* Requests.swift in Sources */,
@@ -732,6 +752,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9672430F23D0CD47003FE0FE /* UITickersVC.swift in Sources */,
+				9672432923D0DD9C003FE0FE /* UITickerInfoVC.swift in Sources */,
+				9672432523D0D9FB003FE0FE /* UIViewControllerExtensions.swift in Sources */,
+				9672432723D0DB98003FE0FE /* UIStyleActivityIndicator.swift in Sources */,
 				9672431223D0CE53003FE0FE /* FormBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,7 +764,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9672431323D0CE54003FE0FE /* FormBuilder.swift in Sources */,
+				9672432B23D0E14F003FE0FE /* UITickerInfoVC.swift in Sources */,
 				9672431023D0CD47003FE0FE /* UITickersVC.swift in Sources */,
+				9672432A23D0E133003FE0FE /* UIStyleActivityIndicator.swift in Sources */,
 				967242FD23D0CD1C003FE0FE /* TickersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,6 +808,11 @@
 			isa = PBXTargetDependency;
 			target = 967242EC23D0CD1B003FE0FE /* TickersUI */;
 			targetProxy = 9672430023D0CD1C003FE0FE /* PBXContainerItemProxy */;
+		};
+		9672432223D0D8F2003FE0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9672429023D0B1FD003FE0FE /* TestTaskModel */;
+			targetProxy = 9672432123D0D8F2003FE0FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

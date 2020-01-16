@@ -35,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-9k-dXi">
                                 <rect key="frame" x="192" y="433" width="30" height="30"/>
                                 <state key="normal" title="Run"/>
+                                <connections>
+                                    <action selector="runAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPq-ea-tbf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

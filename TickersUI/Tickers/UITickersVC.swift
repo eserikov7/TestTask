@@ -7,23 +7,60 @@
 //
 
 import UIKit
+import TestTaskModel
 
 class UITickersVC: UITableViewController {
 
+    var service:TickersServiceAbstract!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        refreshData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupUI() {
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     }
-    */
+    
+    @objc func refreshData() {
+        if refreshControl?.isRefreshing != true {
+            UIStyleActivityIndicator.show(in: tableView)
+        }
+        service.fetch { [weak self] (result) in
+            switch result {
+            case .success(_):
+                self?.tableView.reloadData()
+            case .failure(let error):
+                self?.showAlert(message: error.localizedDescription)
+            }
+            UIStyleActivityIndicator.hide()
+            self?.refreshControl?.endRefreshing()
+        }
+    }
+    // MARK: - DataSource
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return service.tickers.count
+    }
+    
+    let cellId = "cellId"
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: cellId)
+        }
+        
+        cell?.textLabel?.text = service.tickers[indexPath.row].name
+        
+        return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = FormBuilder.indstantTickersInfoVC(ticker: service.tickers[indexPath.row])
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

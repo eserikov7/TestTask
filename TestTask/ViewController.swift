@@ -12,11 +12,9 @@ import TickersUI
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func runAction() {
+        self.navigationController?.pushViewController(FormBuilder.indstantTickersVC(), animated: true)
     }
-
 
 }
 
