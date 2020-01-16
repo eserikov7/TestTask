@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "12F76972-676E-4B05-A39B-E2009B61051C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TestTask.xcodeproj",
+        "identifier" : "9672429823D0B1FD003FE0FE",
+        "name" : "TestTaskModelTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -8,6 +8,8 @@
 
 import UIKit
 
+import TickersUI
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
